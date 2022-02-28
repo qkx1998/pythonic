@@ -110,3 +110,9 @@ d[1] += 1 #即d[1] = 1
 from itertools import product 
 for x, y, z in product(lst1, lst2, lst3):
     print(x, y, z)
+    
+#23 进度条参数
+# desc: 用于描述 进度条 的项目名称
+# 颜色参数：[BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE]，建议选择 CYAN
+for i in tqdm(range(20), desc='time sleep', colour='CYAN'):
+    time.sleep(0.1)
